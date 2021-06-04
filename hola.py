@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/pytho
+
 
 print ("Hola Mundo")
-raw_input()
