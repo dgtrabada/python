@@ -1,31 +1,82 @@
 #!/usr/bin/python3
 
-# Tipos básicos :
-#  Números
-#    int
-#    float
-#    complex
-#  Cadenas
-#  Booleanos
+#Tipos básicos :
+  #Números
+    #int
+    #float
+    #complex
+  #Cadenas
+  #Booleanos
+
+#Operadores aritméticos:
+  # +  suma
+  # -  resta
+  # *  multiplicación
+  # ** exponente
+  # /  división
+  # // división entera
+  # %  modulo
+
+#Operadores a nivel bit
 
 #Casting int() float() str()
 
-print("=======================")
+#int
 x=5
-y=3.14
-yc=3.14e-3
-z=2.0+7.0j
-print (x," es un entero ",type(x))
-print (y," es un float ",type(y))
-print (yc," es un float notación cientifica ",type(yc))
-print (z," es un complejo ",type(z))
-print(str(x)+'*'+str(x)+'='+str(x*x))
-print(str(yc)+'*'+str(yc)+'='+str(yc*yc))
-print(str(z)+'*'+str(z)+'='+str(z*z))
-print("=======================")
-b=True
-print (b," es un booleano ",type(b))
-print("=======================")
+y=2
+print(type(x))   # <class 'int'>
+print(x+y)       # 7
+print(x-y)       # 3
+print(x*y)       # 10
+print(x**y)      # 25
+print(x/y)       # 2.5
+print(x//y)      # 2
+print(x%y)       # 1
+
+#float
+x=3.14
+y=2.72
+print(type(x))   # <class 'float'>
+print(x+y)       # 5.86
+print(x-y)       # 0.41999999999999993
+print(x*y)       # 8.5408
+print(x**y)      # 22.472357891492628
+print(x/y)       # 1.1544117647058822
+print(x//y)      # 1.0
+print(x%y)       # 0.41999999999999993
+
+#float notación cientifica
+x=3.14e-3
+print(type(x))   # <class 'float'>
+print(x*y)       # 0.008540800000000001
+
+#complex
+x=2.0 + 7.0j
+y=2.0 - 7.0j
+print(type(x))   # <class 'complex'>
+print(x+y)       # (4+0j)
+print(x-y)       # 14j
+print(x*y)       # (53+0j)
+print(x**y)      # (139718.62243609893+428122.7199034837j)
+print(x/y)       # (-0.8490566037735849+0.5283018867924528j)
+#print(str(x//y))# TypeError: can't take floor of complex number.
+#print(str(x%y)) # TypeError: can't mod complex numbers.
+
+x=True
+y=False
+print(type(x))   # <class 'bool'>
+print(x+y)       # 1
+print(x+x)       # 2
+print(y+y)       # 0
+print(x-y)       # 1
+print(y-x)       # -1
+print(x*y)       # 0
+print(x**y)      # 1
+print(y/x)       # 0.0
+print(y//x)      # 0
+print(x%x)       # 0
+
+
 
 s="Hola Mundo"
 print (s," es una cadena ",type(s))
