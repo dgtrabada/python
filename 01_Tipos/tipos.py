@@ -17,11 +17,32 @@
   # // división entera
   # %  modulo
 
-#Operadores a nivel bit
+#Operadores de comparación
+ # ==  igual
+ # !=  no igual
+ #  >  mayor que
+ #  <  menor que
+ # >=  mayor o igual que 
+ # <=  menor o igual que 
+
+#Operadorres lógicos
+ # and
+ # or
+ # not
+ # is
+ # is not
+
+#operadores binarios
+ # &  and
+ # |  or
+ # ^  xor
+ # ~  not
+ # << desplazar bits
+ # >> desplazar bits
 
 #Casting int() float() str()
 
-#int
+print(" ======== int =======")
 x=5
 y=2
 print(type(x))   # <class 'int'>
@@ -32,8 +53,40 @@ print(x**y)      # 25
 print(x/y)       # 2.5
 print(x//y)      # 2
 print(x%y)       # 1
+x+=2             #igual  x = x + 2
+print(x)         # 7
+x-=2
+print(x)         # 5
+x*=2
+print(x)         # 10
+x**=2
+print(x)         # 100
+x/=2
+print(x)         # 50.0
+x//=2
+# Operadores de comparación
+x=4
+y=5
+print(x == y)    # False
+print(x != y)    # True
+print(x >  y)    # False
+print(x <  y)    # True
+print(x >= y)    # False
+print(x <= y)    # True
 
-#float
+# Desplazamiento de bits
+x=12             # 1100
+y=10             # 1010
+print(x&y)       # 1000 = 8
+print(x|y)       # 1110 = 14
+print(x^y)       # 0110 = 6
+print(~x)        # -(1100+1) = -13
+x >>= 3          # 1 
+print(x)         # 1
+x <<= 3          # 1000
+print(x)         # 8
+
+print(" ======== float =======")
 x=3.14
 y=2.72
 print(type(x))   # <class 'float'>
@@ -50,7 +103,7 @@ x=3.14e-3
 print(type(x))   # <class 'float'>
 print(x*y)       # 0.008540800000000001
 
-#complex
+print(" ======== complex  =======")
 x=2.0 + 7.0j
 y=2.0 - 7.0j
 print(type(x))   # <class 'complex'>
@@ -77,22 +130,48 @@ print(y//x)      # 0
 print(x%x)       # 0
 
 
-
+print(" ======== cadenas  =======")
 s="Hola Mundo"
-print (s," es una cadena ",type(s))
-print ("Tiene una longitud de "+str(len(s)))
-print(s)
-print(s[0])
-print(s[0:4])
-print(s[:4])
-print(s[4:])
-print(s[-2])
-print(s[-2:])
-print(s[-4:-2])
-print(s[5:len(s)]+" "+s[0:4])
-print("Mundo" not in s)
-print("hola" not in s)
-print("=======================")
+print (type(s))               # <class 'str'>
+print (len(s))                # 10
+print(s)                      # Hola Mundo
+print(s[0])                   # H
+print(s[0:4])                 # Hola
+print(s[:4])                  # Hola
+print(s[5:])                  # Mundo
+print(s[-2])                  # d
+print(s[-2:])                 # do
+print(s[-4:-2])               # un
+print(s[5:len(s)]+" "+s[0:4]) # Mundo Hola
+print("Mundo" not in s)       # False
+print("hola" not in s)        # True
+print("Mundo" in s)           # True
+print("hola" in s)            # False
+print(s.upper())              # HOLA MUNDO
+print(s.lower())              # hola mundo
+print(s.lower().title())      # Hola Mundo
+print(s.replace(" ","."))     # Hola.Mundo
+print(s.split(" "))           # ['Hola', 'Mundo']
+print(s.find("Mu"))           # 5
+print(s.count("o"))           # 2
+print(s.index("o"))           # 1
+print(s.index("do"))          # 8 
 
 
+print(" ======== booleanos  =======")
+x=True
+y=False
+print(x and y)      # False
+print(x or y)       # True
+print(not x)        # False
+print(x is y)       # False
+print(x is not y)   # True
 
+
+print (" ======== Casting =========" )
+x=3.14
+print(int(x))
+print(float(x))
+print(str(x))
+# print("x ="+x) TypeError: can only concatenate str (not "float") to str
+print("x = "+str(x))
