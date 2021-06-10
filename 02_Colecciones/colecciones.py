@@ -85,9 +85,14 @@ print(len(d))             # 3
 print(type(d))            # <class 'dict'>
 #se accede por su clave
 print(d["Blue"])          # Azul
-d["Blue"]="0000FF"        # 0000FF
-print(d["Blue"])
-
+d["Blue"]="0000FF"        
+print(d["Blue"])          # 0000FF  
+del d['Blue']              
+d.update({"Año": 1984})
+print(d)                  # {'Yellow': 'Amarillo', 'Black': 'Negro', 'Año': 1984}
+print(d["Año"])           # 1984 
+print(d.pop("Yellow"))    # Amarillo 
+print(d)                  # {'Black': 'Negro', 'Año': 1984}
 
 
 
