@@ -2,6 +2,7 @@
 
 #funciones, condicionaes y bucles
 
+print ("========= funciones y condicionales ============")
 def f(x):
   return x*x
 
@@ -90,6 +91,15 @@ for i in range(2,5):
 # 2
 # 3
 # 4
+
+for i in range(1,10,2):
+  print(i)
+# 1
+# 3
+# 5
+# 7
+# 9
+
 
 l=[1,2,3,4,5]
 for i in l:
