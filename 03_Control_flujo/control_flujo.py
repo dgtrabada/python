@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 
-#condicionaes y bucles
+#funciones, condicionaes y bucles
+
+def f(x)
+  return x*x
+
+x=2
+print(f(x))
 
 x = 1
 y = 2
