@@ -7,7 +7,7 @@ def f(x):
   return x*x
 
 x=2
-print(f(x)) # 4
+print(f(x))   # 4
 
 
 
@@ -15,9 +15,9 @@ def f(x,y):
   if x < y :
     print ("es mayor")
 
-f(1,2)    # es mayor
-f(2,1)    #
-f(1,1)    #
+f(1,2)        # es mayor
+f(2,1)        #
+f(1,1)        #
 
 def f(x,y):
   if x < y :
@@ -25,9 +25,9 @@ def f(x,y):
   else:
     print ("es menor")
 
-f(1,2)    # es mayor
-f(2,1)    # es menor
-f(1,1)    # es menor
+f(1,2)        # es mayor
+f(2,1)        # es menor
+f(1,1)        # es menor
 
 def f(x,y):
   if x < y :
@@ -37,13 +37,13 @@ def f(x,y):
   else:
     print ("es menor")
 
-f(1,2)     # es mayor
-f(2,1)     # es menor
-f(1,1)     # es igual
+f(1,2)        # es mayor
+f(2,1)        # es menor
+f(1,1)        # es igual
 
-f("A","B") # es mayor
-f("B","A") # es menor
-f("A","A") # es igual
+f("A","B")    # es mayor
+f("B","A")    # es menor
+f("A","A")    # es igual
 
 
 
@@ -57,16 +57,27 @@ def f(x):
   if x > 30  and x <= 40 :
     print ("entre 30-40") 
 
-f(1)       # entre 0-10
-f(22)      # entre 20-30
+f(1)          # entre 0-10
+f(22)         # entre 20-30
 
 # podríamos pasar varios valores que retornar
 def f(x, y):
   return x * 2, y * 3
 
 a, b = f(1, 2)
-print(a)   # 2
-print(b)   # 6
+print(a)      # 2
+print(b)      # 6
+
+#funcion anónima lambda
+
+y = lambda x : x * x
+print(y(2))   # 4
+
+y= lambda x , y : x * y
+print(y(2,5)) # 10
+
+
+
 
 print ("========= bucles ============")
 i = 1
