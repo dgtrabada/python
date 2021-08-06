@@ -15,4 +15,8 @@ git clone https://github.com/dgtrabada/python
     - Bucles
 4. POO  
 5. Modulos, scripts, paquetes  
-6. Lectura y escritura de archivos. 
+6. Lectura y escritura de archivos.
+
+Bibliografía
+ - "Guido van Rossum",(2015), [El tutorial de Python Autor original.](https://argentinaenpython.com/quiero-aprender-python/TutorialPython3.pdf)
+ - "Raúl González Duque",[Python PARA TODOS](http://mundogeek.net/tutorial-python/)
