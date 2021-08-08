@@ -19,4 +19,5 @@ git clone https://github.com/dgtrabada/python
 
 Bibliografía
  - "Guido van Rossum",(2015), [El tutorial de Python Autor original.](https://argentinaenpython.com/quiero-aprender-python/TutorialPython3.pdf)
- - "Raúl González Duque",[Python PARA TODOS](http://mundogeek.net/tutorial-python/)
+ - "Raúl González Duque", [Python PARA TODOS](http://mundogeek.net/tutorial-python/)
+ - "Pablo Angulo Ardoy", [Optimización y Estadística] (https://framagit.org/pang/optimizacion-y-estadistica)
