@@ -13,11 +13,16 @@ git clone https://github.com/dgtrabada/python
     - Funciones
     - Condicionales
     - Bucles
-4. POO  
-5. Modulos, scripts, paquetes  
-6. Lectura y escritura de archivos.
+4. Lectura y escritura de archivos.
+5. Modulos
+6. NumPy
+7. Matplotlib
+8. Random
+9. Pandas
+10. POO  
 
 Bibliografía
  - "Guido van Rossum",(2015), [El tutorial de Python Autor original.](https://argentinaenpython.com/quiero-aprender-python/TutorialPython3.pdf)
  - "Raúl González Duque", [Python PARA TODOS](http://mundogeek.net/tutorial-python/)
  - "Pablo Angulo Ardoy", [Optimización y Estadística] (https://framagit.org/pang/optimizacion-y-estadistica)
+ - "Gareth James" ["Introduction to Statistical Learning"](http://www-bcf.usc.edu/~gareth/ISL/)
