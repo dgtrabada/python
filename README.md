@@ -14,12 +14,11 @@ git clone https://github.com/dgtrabada/python
     - Condicionales
     - Bucles
 4. Lectura y escritura de archivos.
-5. Modulos
+5. Modulos y POO
 6. NumPy
 7. Matplotlib
 8. Random
 9. Pandas
-10. POO  
 
 Bibliografía
  - "Guido van Rossum",(2015), [El tutorial de Python Autor original.](https://argentinaenpython.com/quiero-aprender-python/TutorialPython3.pdf)
