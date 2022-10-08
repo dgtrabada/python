@@ -3,12 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class red:
-    def __init__(self, c1=3,c2=4,c3=2):
-        #definimos 3 capas:
-        self.c1=c1
-        self.c2=c2
-        self.c3=c3
-        self.Capa = np.array([np.zeros(c1),np.zeros(c2),np.zeros(c3)])   
+    def __init__(self, Capa,ver_pesos):
+        a=[]
+        for i in Capa:
+            a.append(np.zeros(i))
+        self.Capa = np.array(a) 
+        self.ver_pesos = ver_pesos
+
          
     def plt(self):
         G = nx.Graph()
@@ -29,7 +30,6 @@ class red:
         edge_labels_aux={}
         edges=[]
         
-        
         for i in range(len(self.Capa)-1):
             for x in range(len(self.Capa[i])):
                 for y in range(len(self.Capa[i+1])):
@@ -41,23 +41,24 @@ class red:
                     
         G.add_edges_from(edges)
         pos = nx.spring_layout(G)
-        
+
         for x in range(len(self.Capa)):
              for y in range(len(self.Capa[x])):
                     pos[Capa_label[x][y]]=[x,len(Capa_label[x])/2-y]
         
     
         nx.draw(
-            G, pos, edge_color='black', width=1, linewidths=1,
+            G, pos, edge_color='darkgrey', width=1, linewidths=1,
             node_size=600, node_color='pink', alpha=0.9,
             labels={node: node for node in G.nodes()}
         )
-    
-        nx.draw_networkx_edge_labels(
-            G, pos,
-            edge_labels=edge_labels_aux,
-            font_color='red'
-        )
+      
+        if self.ver_pesos:
+            nx.draw_networkx_edge_labels(
+                G, pos,
+                edge_labels=edge_labels_aux,
+                font_color='red'
+            )
     
         plt.figure()
         #plt.axis('off')
@@ -102,21 +103,21 @@ class red:
         for i in pos:
             if i[0] == "a":
                 if A[int(i[1])] > 0.5:
-                    color.append("tab:green")
+                    color.append("yellowgreen")
                 else:
-                    color.append("tab:red")  
+                    color.append("coral")  
             if i[0] == "b":
                 if B[int(i[1])] > 0.5:
-                    color.append("tab:green")
+                    color.append("yellowgreen")
                 else:
-                    color.append("tab:red") 
+                    color.append("coral") 
             if i[0] == "c":
                 if C[int(i[1])] > 0.5:
-                    color.append("tab:green")
+                    color.append("yellowgreen")
                 else:
-                    color.append("tab:red") 
+                    color.append("coral") 
         widthaux=[]
-        max_l=5
+        max_l=4
         min_l=0
         for i in edges:
             if i[0][0] == "a":
@@ -128,7 +129,7 @@ class red:
                 + min_l*(W.max() - f )/(W.max()- W.min()) )   
         nx.draw(
             G, pos, 
-            edge_color="tab:blue",
+            edge_color="cornflowerblue",
             width=widthaux, 
             linewidths=1,
             node_size=400, 
