@@ -21,6 +21,7 @@ git clone https://github.com/dgtrabada/python
 9. Pandas
 
 Bibliografía
+ - [Documentación ofical] (https://docs.python.org)
  - "Guido van Rossum",(2015), [El tutorial de Python Autor original.](https://argentinaenpython.com/quiero-aprender-python/TutorialPython3.pdf)
  - "Raúl González Duque", [Python PARA TODOS](http://mundogeek.net/tutorial-python/)
  - "Pablo Angulo Ardoy", [Optimización y Estadística] (https://framagit.org/pang/optimizacion-y-estadistica)
