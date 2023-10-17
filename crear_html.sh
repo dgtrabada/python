@@ -9,4 +9,4 @@ do
   cd ..
 done
 
-
+mv */*html $PYTHONHTML/
