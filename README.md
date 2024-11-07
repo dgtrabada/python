@@ -2,7 +2,7 @@
 
 Todo el *código fuente* para enseñar una inicialización a  **python**
 
-git clone https://github.com/dgtrabada/python
+git clone git@github.com:dgtrabada/python
 
 1. Tipos  
 2. Colecciones
