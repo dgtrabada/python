@@ -1,7 +1,4 @@
-#!/usr/bin/python3
 import sys
-#import os
-#sys.path.append("/home/dani/python/ajedrez")
 import random
 from tablero import tablero
 
