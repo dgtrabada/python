@@ -36,7 +36,7 @@ def n_damas(n):
         amenaza=False
    
         for dama1 in range(len(T.Lista_fichas)):
-           for dama2 in range(dama1+1,8):
+           for dama2 in range(dama1+1,n):
                pos1 = T.Lista_fichas[dama1].getPosInt()
                pos2 = T.Lista_fichas[dama2].getPosInt()
                if (abs(pos1[0]-pos2[0]) == abs(pos1[1]-pos2[1])):
