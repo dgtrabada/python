@@ -58,7 +58,6 @@ if (len(sys.argv) == 1):
             'pn_a7', 'pn_b7', 'pn_c7', 'pn_d7', 'pn_e7', 'pn_f7', 'pn_g7', 'pn_h7',
             'tn_a8', 'cn_b8', 'an_c8', 'rn_d8', 'dn_e8' ,'an_f8', 'cn_g8', 'tn_h8'      
             ]
-    '''
     T=tablero(inicio)
     T.pintar_tablero()
     T.cambiar_posicion_ficha("pb_d2","pb_d4")
@@ -66,7 +65,5 @@ if (len(sys.argv) == 1):
     T.cambiar_posicion_ficha("ab_c1","ab_e3")
     T.comer_ficha("cn_c6","cn_d4")
     T.pintar_tablero()
-    '''
-    n_damas(8)
 
  
