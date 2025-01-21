@@ -7,7 +7,7 @@ class red:
         a=[]
         for i in Capa:
             a.append(np.zeros(i))
-        self.Capa = np.array(a) 
+        self.Capa = a
         self.ver_pesos = ver_pesos
 
          
